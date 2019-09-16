@@ -11,7 +11,22 @@
     height: 100%;
 }
 
+/*30% */
 #main-header .port-item
 {
-    width: 30%;
+    width: 25%;
+}
+
+#main-header .port-item:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media (min-width: 1199px)
+{
+    .port-item
+    {
+        padding: 3em !important;
+    }
 }
