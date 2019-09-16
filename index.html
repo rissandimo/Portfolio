@@ -1,144 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <title>Bootstrap Theme</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Theme</title>
+</head>
 
-    <body>
+<body>
+<!-- START HERE -->
+<div class="container">
+    <header id="main-header">
+        <div class="row no-gutters">
+            <!-- Profile Image -->
+            <div class="col-lg-4 col-md-5">
+                <img src="img/profile_smaller2.JPG">
+            </div>
 
-        
-        <div class="container">
-            <header id="main-header">
-                <div class="row no-gutters">
-<!-- Profile Image -->
-                    <div class="col-lg-4 col-md-5">
-                        <img src="img/profile_smaller2.JPG">
-                    </div>
+            <!-- name w/ social media icons -->
+            <div class="col-lg-8 col-md-7">
+                <div class="d-flex flex-column">
+                    <div class="p-4 bg-dark text-white">
 
- <!-- Name w/ Social media icons -->
-                    <div class="col-lg-8 col-md-7">
-                        <div class="d-flex flex-column">
-                            <div class="p-4 bg-dark text-white">
+                        <!--
+                    justify-content-center -> but space b/w social media links -->
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <h1 class="display-5">Omid Nassir</h1>
 
-                                <!--
-                                justify-content-center -> put space b/w social media links -->
-                                <div class="d-flex flex-row justify-content-between align-items-center">
-                                    <h1 class="display-5">Omid Nassir</h1>
-
-                                <!-- social media icons
-                                d-none -> don't display by default
-                                d-md -> show on medium+
-                                -->
-                                    <div class="d-none d-md-block">
-                                        <a href="http://twitter.com" class="text-white">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </div>
-
-                                    <div>
-                                        <a href="http://facebook.com" class="text-white">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                    </div>
-
-                                    <div>
-                                        <a href="http://instagram.com" class="text-white">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-
-                                    <div>
-
-                                        <a href="http://github.com" class="text-white">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div> <!-- end media links -->
-
+                            <!-- twitter
+        d-none -> don't display by default
+        d-md -> show on medium+
+            -->
+                            <div class="d-none d-md-block">
+                                <a href="http://twitter.com" class="text-white">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
 
                             </div>
 
-
-
-<!-- Personal Statement -->
-                            <div class="p-4 bg-black">
-                                Experienced java-developer
-                            </div>
-
+                            <!-- facebook -->
                             <div>
-                                <!-- items-stretch -> stretch top to bottom -->
-                                <div class="d-flex flex-row text-white align-items-stretch text-center">
 
-                          ->
-                                    <!-- home icon -->
-                                    <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-home fa-2x d-block"></i>
-                                        <!-- d-none -> show small screens and up -->
-                                        <span class="d-none d-sm-block">Home</span>
-                                    </div> 
+                                <a href="http://facebook.com" class="text-white">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
 
+                            </div> <!-- end facebook -->
 
-                                    <!-- Resume icon -->
-                                    <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                                        <!-- d-none -> show small screens and up -->
-                                        <span class="d-none d-sm-block">Resume</span>
-                                    </div> 
+                            <!-- instagram -->
+                            <div>
 
+                                <a href="http://instagram.com" class="text-white">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div><!-- end instagram -->
+                            
+                            <!-- instagram -->
+                            <div>
 
-                                    <!-- Work icon -->
-                                    <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
-                                        <i class="fas fa-folder-open fa-2x d-block"></i>
-                                        <!-- d-none -> show small screens and up -->
-                                        <span class="d-none d-sm-block">Work</span>
-                                    </div> 
+                                <a href="http://github.com" class="text-white">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div><!-- end instagram -->
 
-                                    <!-- Contact icon -->
-                                    <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
-                                        <i class="fas fa-envelope fa-2x d-block"></i>
-                                        <!-- d-none -> show small screens and up -->
-                                        <span class="d-none d-sm-block">Contact</span>
-                                    </div> 
+                        </div> <!-- end media links -->
 
-
-
-
-                                </div> <!-- end colored icons -->
-
-                            </div>
-
-
-                        </div>
 
                     </div>
+                    
+                    
+                    
+                    <!-- personal statement -->
+                    <div class="p-4 bg-black">
+                    Java Developer
+                    </div>
+                    
+                    <div>
+                        <!-- items-stretch -> stretch top to bottom -->
+                        <div class="d-flex flex-row text-white align-items-stretch text-center">
+                            
+                            
+                            <!-- home icon -->
+                            <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                <i class="fas fa-home fa-2x d-block"></i>
+                                    <!-- d-none -> show small screens and up -->
+                                <span class="d-none d-sm-block">Home</span>
+                            </div> <!-- end home icon -->
+                            
+                                                        
+                                                        <!-- Resume icon -->
+                            <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                                <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                                    <!-- d-none -> show small screens and up -->
+                                <span class="d-none d-sm-block">Resume</span>
+                                
+                            </div> <!-- end home icon -->
+                            
+                                                  
+                                                        <!-- Work icon -->
+                            <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                                <i class="fas fa-folder-open fa-2x d-block"></i>
+                                    <!-- d-none -> show small screens and up -->
+                                <span class="d-none d-sm-block">Work</span>
+                              
+                            </div> <!-- end home icon -->
+                            
+                            
+                                                        <!-- Contact icon -->
+                            <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                                <i class="fas fa-envelope fa-2x d-block"></i>
+                                    <!-- d-none -> show small screens and up -->
+                                <span class="d-none d-sm-block">Contact</span>
+                              
+                            </div> <!-- end home icon -->
+                            
+                        
+                            
+                            
+                        </div> <!-- end colored icons -->
+                        
+                    </div>
+
+
                 </div>
 
+            </div>
+        </div>
 
-            </header> 
-<!-- end header -->
+
+    </header> <!-- end header -->
+    
+    
+    
+    <!-- end header -->
             
             <!-- middle content
 collapse show -> show by default
 py-5 -> padding top and bottom 5
 -->
             <div id="home" class="collapse show">
-            <div class="card card-body bg-primary text-white py-5">
-                <h2>Welcome To My Page</h2>
-                <p>My name is Omid and I self-motivated and passionate back-end developer with experience using Java and various frameworks</p>
+                <div class="card card-body bg-primary text-white py-5">
+                    <h2>Welcome To My Page</h2>
+                    <p>My name is Omid and I self-motivated and passionate back-end developer with experience using Java and various frameworks</p>
+                </div>
+                
+            <div class="card card-body py-5">
+                <h3>My Skills</h3> 
+                <hr>
+                
+               <h4>Java</h4>
+                <!-- mb-3 -> margin bottom 3 -->
+                <div class="progress mb-3">
+                    <div class="progres-bar bg-success" style="width: 80%">
+                    </div>
+                </div>   
+                
+                
+               <h4>Spring Framework</h4>
+                <!-- mb-3 -> margin bottom 3 -->
+                <div class="progress mb-3">
+                    <div class="progres-bar bg-success" style="width: 40%">
+                    </div>
+                </div>    
+                
+               <h4>SQL</h4>
+                <!-- mb-3 -> margin bottom 3 -->
+                <div class="progress mb-3">
+                    <div class="progres-bar bg-success" style="width: 70%">
+                    </div>
+                </div>   
+                
+                
+                <h4>HTML 5</h4>
+                <!-- mb-3 -> margin bottom 3 -->
+                <div class="progress mb-3">
+                    <div class="progres-bar bg-success" style="width: 60%">
+                        
+                    </div>
+                </div>         
+                
+                <h4>CSS</h4>
+                <!-- mb-3 -> margin bottom 3 -->
+                <div class="progress mb-3">
+                    <div class="progres-bar bg-success" style="width: 40%"></div>
+        </div>  
+   </div>       
+ </div><!-- end skills --> 
+    
+    
+    
+    <!-- resume 
+collapse -> don't show by default
+-->
+    <div id="resume" class="collapse">
+        <div class="card card-body bg-success text-white py-5">
+            <h2>My Resume</h2>
+            <p>My name is Omid and I self-motivated and passionate back-end developer with experience using Java and various frameworks</p>
+        </div>
+        
+        <div class="card card-body py-5">
+            <h3>Where Have I worked</h3>
+            <p>Ths places that I have worked......</p>
+            <div class="card-deck">
+                
+                <!-- setareh law group -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Setareh Law Group</h4>
+                        <p class="card-text">
+                        lorem ipsum text......
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                        Position: IT Technician
+                        </p>                       
+                        <p class="p-2 mb-3 bg-dark text-white">
+                        Phone: (310) 888-8871
+                        </p>
+                    
+                    </div>
+                    <div class="card-footer">
+                        <!-- text-muted -> make font lighter-->
+                    <h6 class="text-muted">Dates: 2015 - 2017</h6>
+                    </div>
+                    
+                </div>    
+                
+                
+                <!-- Santa Monica College -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Setareh Law Group</h4>
+                        <p class="card-text">
+                        lorem ipsum text......
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                        Position: IT Technician
+                        </p>                       
+                        <p class="p-2 mb-3 bg-dark text-white">
+                        Phone: (310) 888-8871
+                        </p>
+                    
+                    </div>
+                    <div class="card-footer">
+                        <!-- text-muted -> make font lighter-->
+                    <h6 class="text-muted">Dates: 2015 - 2017</h6>
+                    </div>
+                    
+                </div>
+                
+                                
+                <!-- City DDS LA -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Setareh Law Group</h4>
+                        <p class="card-text">
+                        lorem ipsum text......
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                        Position: IT Technician
+                        </p>                       
+                        <p class="p-2 mb-3 bg-dark text-white">
+                        Phone: (310) 888-8871
+                        </p>
+                    
+                    </div>
+                    <div class="card-footer">
+                        <!-- text-muted -> make font lighter-->
+                    <h6 class="text-muted">Dates: 2015 - 2017</h6>
+                    </div>
+                    
+                </div>
+                
+                
             </div>
-            </div>
-            
+        </div>
+    </div> <!-- end resume -->
             
             
             
@@ -153,25 +297,26 @@ py-5 -> padding top and bottom 5
                     </div>
                 </div>
             </footer>
-            
-            
-            
-        </div> <!-- end container -->
+    
+
+</div> <!-- end container -->
 
 
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-                integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-                crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
-        <script>
-            // Get the current year for the copyright
-            $('#year').text(new Date().getFullYear());
-        </script>
-    </body>
+<script>
+    $('.port-item').click(function()
+    {
+        $('.collapse').collapse('hide');
+    })
+</script>
+</body>
 
 </html>
