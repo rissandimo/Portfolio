@@ -284,28 +284,65 @@ collapse -> don't show by default
             <h2>My Work</h2>
     </div>
         
+        
+        <!-- personal projects -->
         <div class="card card-body py-5">
             <p>Personal Projects</p>
-            <p>Spring Boot Bank Web Application</p>
-            <!-- no gutters -> no spaces -->
-            <div class="row no-gutters">
-                
+            
+            <div class="row">
                 <!--JavaFx Bank Application -->
             <div class="col-md-3">
-            <a href="https://github.com/rissandimo/JavaFX-Bank-Application" data-toggle="lightbox"></a>    <img src=img/projects/JavaFx-Bank.png height="350">
+            <p>JavaFX Bank App</p>
+
+            <a href="https://github.com/rissandimo/JavaFX-Bank-Application" data-toggle="lightbox">
+                 <img src=img/projects/JavaFx-Bank.png height="400" class="img-fluid">
+            </a>  
             </div>
                 <!-- JavaFX Todo List Application -->
             <div class="col-md-3">
-            <a href="https://github.com/rissandimo/JavaFX-Todo-List" data-toggle="lightbox"></a>    <img src=img/projects/JavaFx-Bank.png height="350">    
+                <p>JavaFx Todo List App</p>
+            <a href="https://github.com/rissandimo/JavaFX-Todo-List" data-toggle="lightbox">
+               <img src=img/projects/JavaFx-Bank.png height="350" class="img-fluid">  
+            </a>    
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+
             </div>
+        </div> <!-- end personal projects -->
+    
+    
+    </div><!-- end work section -->
+    
+    <!-- contact -->
+    
+    <div class="contact collapse">
+        <div class="card card-body bg-danger text-white py-5">
+        <h2>Contact Me</h2>
         </div>
-    
-    
+        
+        <div class="card card-body bg-danger text-white py-5">
+        <h3>asdfadfadfasdfasdf</h3>
+            
+            <form>
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                
+                <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-user"></i>
+                </span>
+                </div>
+              <input type="text" class="form-control bg-dark text-white" placeholder="Name">  
+                
+            </div>
+            
+            
+            
+            </form>
+            
+            
+            
+        </div>
+        
     </div>
-    
             
             
             
@@ -334,7 +371,7 @@ collapse -> don't show by default
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
 <script>
     $('.port-item').click(function()
@@ -345,7 +382,7 @@ collapse -> don't show by default
     $(document).on('click', '[data-toggle="lightbox"]', function(e)
                   {
         e.preventDefault();
-        $(this).ekkoLightBox();
+        $(this).ekkoLightbox();
     });
 </script>
 </body>
