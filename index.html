@@ -87,7 +87,6 @@
                                 <i class="fas fa-graduation-cap fa-2x d-block"></i>
                                     <!-- d-none -> show small screens and up -->
                                 <span class="d-none d-sm-block">Resume</span>
-                                
                             </div> <!-- end home icon -->
                             
                                                   
@@ -105,7 +104,6 @@
                                 <i class="fas fa-envelope fa-2x d-block"></i>
                                     <!-- d-none -> show small screens and up -->
                                 <span class="d-none d-sm-block">Contact</span>
-                              
                             </div> <!-- end home icon -->
                             
                         
@@ -314,15 +312,16 @@ collapse -> don't show by default
     
     <!-- contact -->
     
-    <div class="contact collapse">
+    <div id="contact" class="collapse">
         <div class="card card-body bg-danger text-white py-5">
         <h2>Contact Me</h2>
         </div>
         
-        <div class="card card-body bg-danger text-white py-5">
-        <h3>asdfadfadfasdfasdf</h3>
+        <div class="card card-body py-5">
             
             <form>
+                <!--- name -->
+        <div class="form-group">
             <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
                 
@@ -330,12 +329,42 @@ collapse -> don't show by default
                     <i class="fas fa-user"></i>
                 </span>
                 </div>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Name">  
-                
+              <input type="text" class="form-control bg-dark text-white" placeholder="Name">    
             </div>
-            
-            
-            
+        </div>
+                
+                                <!--- email -->
+        <div class="form-group">
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                
+                <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                </div>
+              <input type="text" class="form-control bg-dark text-white" placeholder="Email">    
+            </div>
+        </div>
+                
+                
+                
+                                                <!--- message -->
+        <div class="form-group">
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                
+                <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-pencil-alt"></i>
+                </span>
+                </div>
+              <textarea class="form-control bg-dark text-white" placeholder="Message"/>    
+            </div>
+        </div>
+                
+           <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">     
+                
+                
+                
             </form>
             
             
